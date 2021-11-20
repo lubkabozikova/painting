@@ -6,7 +6,7 @@
 // ak vadi pomlcka, napriklad stroke-width, staci strcit do uvodzoviek
 function createSvg (Type,ParamObject) {
     const svgNS = "http://www.w3.org/2000/svg";
-    SvgElement = document.createElementNS(svgNS,Type);
+    const SvgElement = document.createElementNS(svgNS,Type);
     for (key in ParamObject) {
         SvgElement.setAttribute(key,ParamObject[key]);
     }
